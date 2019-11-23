@@ -10,20 +10,20 @@ struct ServerOptions {
     #[structopt(short = "p", long = "port", default_value = "8000")]
     /// Start listening on a port, Default: 8000
     port: String,
-    #[structopt(short = "f", long = "load-centroids", parse(from_os_str))]
-    /// Load centroids from serialized json Array2<f64>
-    centroids_path: PathBuf,
+    #[structopt(short = "f", long = "model", parse(from_os_str))]
+    /// Filepath to a serialised model in JSON format
+    model_path: PathBuf,
 }
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Initialize centroids
     let opt = ServerOptions::from_args();
-    let store = Store::load(opt.centroids_path).expect("failed to load from input file");
+    let store = Store::load(opt.model_path).expect("failed to load from input file");
 
     let (n_centroids, n_features) = store.kmeans.centroids().dim();
     println!(
-        "Loaded {} centroids with {} features",
+        "Loaded K-Means model with {} centroids with {} features",
         n_centroids, n_features
     );
 

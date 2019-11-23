@@ -11,7 +11,7 @@ struct Opt {
     features: usize,
     #[structopt(short = "c", long="centroids", default_value = "100")]
     centroids: usize,
-    #[structopt(short = "o", long="output", default_value = "./centroids.json")]
+    #[structopt(short = "o", long="output", default_value = "./rust_k_means_model.json")]
     output: std::path::PathBuf
 }
 

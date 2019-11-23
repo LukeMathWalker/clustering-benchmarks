@@ -24,13 +24,13 @@ mod test {
 
     #[test]
     fn load_from_file() {
-        Store::load("../test/centroids.json".into()).expect("failed to load from input file");
+        Store::load("../data/rust_k_means_model.json".into()).expect("failed to load from input file");
     }
 
 
     #[test]
     fn integration() {
-        let store = Store::load("../test/centroids.json".into())
+        let store = Store::load("../data/rust_k_means_model.json".into())
             .expect("failed to load from input file");
 
         let sl = s![0..1, ..];
@@ -41,19 +41,4 @@ mod test {
             array![0]
         );
     }
-/*
-    #[test]
-    fn tonic() {
-        let store = Store::load_json("./test/centroids.json".into())
-            .expect("failed to load from input file");
-        
-        let addr = "[::1]:50001".parse().expect("address");
-        let kmeans = KMeansProto::new(store);
-        let server = Server::builder()
-            .add_service(ClusteringServiceServer::new(kmeans))
-            .serve(addr);
-
-        tokio::runtime::block_on(server)
-    }*/
-
 }

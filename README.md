@@ -46,11 +46,38 @@ The following setups are compared:
 
 The comparison is run using [`ghz`](https://ghz.sh/).
 
-### Running the benchmark
+### Test data
 
+The data used for the inference benchmark can be found in the `data` folder.
+
+The utils under `rust-grpc/src/bin` can be used to generate additional/different test data. Check 
+`rust-grpc/README.md` for more details.
+
+### Launching the gRPC microservices
+
+Launch Python's microservice on port `5001`, serving `scikit-learn`'s model:
 ```bash
-
+cd python-grpc
+# Install the required packages in a virtual environment
+poetry install
+poetry run python src/main.py
 ```
+
+Launch Python's microservice on port `5001`, serving `linfa`'s model (Python wrapper over Rust):
+```bash
+cd python-grpc
+# Install the required packages in a virtual environment
+poetry install
+RUST=true poetry run python src/main.py
+```
+
+Launch Rust's microservice on port `5001`, serving `linfa`'s model (Rust):
+```bash
+cd rust-grpc 
+cargo run --release -- --port 5001 --model=../data/rust_k_means_model.json
+```
+
+### Running the benchmark
 
 ### Results
 

@@ -30,10 +30,8 @@ impl KMeansProto {
 impl ClusteringService for KMeansProto {
     async fn predict(
         &self,
-        request: Request<PredictRequest>, // Accept request of type HelloRequest
+        request: Request<PredictRequest>,
     ) -> Result<Response<PredictResponse>, Status> {
-        // Return an instance of type HelloReply
-        //dbg!("Got a request: {:?}", &request);
 
         let features = request.into_inner().features;
         let observation = Array::from_shape_vec((1, features.len()), features)
@@ -50,11 +48,8 @@ impl ClusteringService for KMeansProto {
 
     async fn predict_batch(
         &self,
-        request: Request<PredictBatchRequest>, // Accept request of type HelloRequest
+        request: Request<PredictBatchRequest>,
     ) -> Result<Response<PredictBatchResponse>, Status> {
-        // Return an instance of type HelloReply
-        //dbg!("Got a request: {:?}", &request);
-
         let observations = request.into_inner().observations;
     
         let cluster_indexes = observations.into_iter()

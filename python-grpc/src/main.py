@@ -55,7 +55,7 @@ if __name__ == "__main__":
         model.fit(dataset)
         log(30, "Python model has been loaded")
     else:
-        model = KMeans.load("../test/centroids.json")
+        model = KMeans.load("../data/rust_k_means_model.json")
         log(30, "Rust model has been loaded")
 
     serve(model)
