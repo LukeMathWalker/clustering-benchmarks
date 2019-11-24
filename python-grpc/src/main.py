@@ -49,13 +49,14 @@ if __name__ == "__main__":
     logging.basicConfig()
 
     n_clusters = 100
+    (dataset, labels) = make_blobs(n_clusters)
     if os.getenv("RUST", None) is None:
-        (dataset, labels) = make_blobs(n_clusters)
         model = sk_KMeans(n_clusters, init="random", algorithm="full", max_iter=100)
         model.fit(dataset)
         log(30, "Python model has been loaded")
     else:
-        model = KMeans.load("../data/rust_k_means_model.json")
+        model = KMeans(n_clusters, max_iter=100)
+        model.fit(dataset)
         log(30, "Rust model has been loaded")
 
     serve(model)

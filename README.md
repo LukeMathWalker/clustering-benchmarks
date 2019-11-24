@@ -79,6 +79,25 @@ cargo run --release -- --port 5001 --model=../data/rust_k_means_model.json
 
 ### Running the benchmark
 
+After you have launched the microservice you want to benchmark, you can measure its performance with:
+```bash
+ghz \
+    --proto=protos/centroids.proto \
+    --call=ml.ClusteringService.Predict \
+    --insecure \
+    --data-file=data/observations.json \
+    --duration 30s \
+    --concurrency $concurrency \
+    --format json \
+    localhost:5001 \
+```
+
+All benchmarks run for 30s, testing different levels of client-side concurrency (64, 128, 256, 512, 1024 concurrent requests) 
+for each server.
+
+If you want to skip a lot of manual error-prone command typing, you can use the `run_benchmark.sh` bash script.
+Result summaries can be found under `grpc-benchmark-outputs`.
+
 ### Results
 
 The results.
