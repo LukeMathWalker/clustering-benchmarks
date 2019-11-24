@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:47:52Z",
+  "endReason": "timeout",
+  "count": 21883,
+  "total": 30000680371,
+  "average": 87603983,
+  "fastest": 5491646,
+  "slowest": 128112274,
+  "rps": 729.4167908656194,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 64
+  },
+  "statusCodeDistribution": {
+    "OK": 21819,
+    "Unavailable": 64
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 83100833
+    },
+    {
+      "percentage": 25,
+      "latency": 85351624
+    },
+    {
+      "percentage": 50,
+      "latency": 87633254
+    },
+    {
+      "percentage": 75,
+      "latency": 89950953
+    },
+    {
+      "percentage": 90,
+      "latency": 92291700
+    },
+    {
+      "percentage": 95,
+      "latency": 93993507
+    },
+    {
+      "percentage": 99,
+      "latency": 102198673
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.005491646,
+      "count": 1,
+      "frequency": 4.583161464778404e-05
+    },
+    {
+      "mark": 0.0177537088,
+      "count": 12,
+      "frequency": 0.0005499793757734085
+    },
+    {
+      "mark": 0.030015771599999998,
+      "count": 8,
+      "frequency": 0.0003666529171822723
+    },
+    {
+      "mark": 0.0422778344,
+      "count": 6,
+      "frequency": 0.00027498968788670426
+    },
+    {
+      "mark": 0.0545398972,
+      "count": 8,
+      "frequency": 0.0003666529171822723
+    },
+    {
+      "mark": 0.06680196,
+      "count": 7,
+      "frequency": 0.0003208213025344883
+    },
+    {
+      "mark": 0.0790640228,
+      "count": 227,
+      "frequency": 0.010403776525046978
+    },
+    {
+      "mark": 0.0913260856,
+      "count": 18294,
+      "frequency": 0.8384435583665613
+    },
+    {
+      "mark": 0.1035881484,
+      "count": 3054,
+      "frequency": 0.13996975113433247
+    },
+    {
+      "mark": 0.1158502112,
+      "count": 195,
+      "frequency": 0.008937164856317887
+    },
+    {
+      "mark": 0.128112274,
+      "count": 7,
+      "frequency": 0.0003208213025344883
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:51:54Z",
+  "endReason": "timeout",
+  "count": 26248,
+  "total": 30011610420,
+  "average": 4677211220,
+  "fastest": 11407539,
+  "slowest": 5627709567,
+  "rps": 874.5948528809405,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 4095
+  },
+  "statusCodeDistribution": {
+    "OK": 22153,
+    "Unavailable": 4095
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 2992880831
+    },
+    {
+      "percentage": 25,
+      "latency": 5492411931
+    },
+    {
+      "percentage": 50,
+      "latency": 5525816435
+    },
+    {
+      "percentage": 75,
+      "latency": 5556162152
+    },
+    {
+      "percentage": 90,
+      "latency": 5573782601
+    },
+    {
+      "percentage": 95,
+      "latency": 5582526179
+    },
+    {
+      "percentage": 99,
+      "latency": 5603447206
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.011407539,
+      "count": 1,
+      "frequency": 4.514061300952467e-05
+    },
+    {
+      "mark": 0.5730377418,
+      "count": 387,
+      "frequency": 0.017469417234686046
+    },
+    {
+      "mark": 1.1346679445999999,
+      "count": 426,
+      "frequency": 0.01922990114205751
+    },
+    {
+      "mark": 1.6962981473999998,
+      "count": 426,
+      "frequency": 0.01922990114205751
+    },
+    {
+      "mark": 2.2579283502,
+      "count": 402,
+      "frequency": 0.01814652642982892
+    },
+    {
+      "mark": 2.819558553,
+      "count": 450,
+      "frequency": 0.020313275854286102
+    },
+    {
+      "mark": 3.3811887558,
+      "count": 418,
+      "frequency": 0.018868776237981312
+    },
+    {
+      "mark": 3.9428189585999998,
+      "count": 419,
+      "frequency": 0.018913916850990836
+    },
+    {
+      "mark": 4.5044491614,
+      "count": 419,
+      "frequency": 0.018913916850990836
+    },
+    {
+      "mark": 5.0660793642,
+      "count": 421,
+      "frequency": 0.019004198077009885
+    },
+    {
+      "mark": 5.627709567,
+      "count": 18384,
+      "frequency": 0.8298650295671015
+    }
+  ]
+}

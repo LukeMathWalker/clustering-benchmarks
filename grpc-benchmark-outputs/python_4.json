@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:45:11Z",
+  "endReason": "timeout",
+  "count": 21617,
+  "total": 30000368588,
+  "average": 5450394,
+  "fastest": 1956859,
+  "slowest": 10185791,
+  "rps": 720.5578137012187,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 3
+  },
+  "statusCodeDistribution": {
+    "OK": 21614,
+    "Unavailable": 3
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 4441802
+    },
+    {
+      "percentage": 25,
+      "latency": 5097354
+    },
+    {
+      "percentage": 50,
+      "latency": 5480998
+    },
+    {
+      "percentage": 75,
+      "latency": 5768906
+    },
+    {
+      "percentage": 90,
+      "latency": 6401050
+    },
+    {
+      "percentage": 95,
+      "latency": 6875478
+    },
+    {
+      "percentage": 99,
+      "latency": 7946071
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.001956859,
+      "count": 1,
+      "frequency": 4.626630887387804e-05
+    },
+    {
+      "mark": 0.0027797522,
+      "count": 21,
+      "frequency": 0.0009715924863514389
+    },
+    {
+      "mark": 0.0036026454,
+      "count": 348,
+      "frequency": 0.016100675488109558
+    },
+    {
+      "mark": 0.0044255386,
+      "count": 1710,
+      "frequency": 0.07911538817433145
+    },
+    {
+      "mark": 0.0052484318,
+      "count": 4973,
+      "frequency": 0.23008235402979552
+    },
+    {
+      "mark": 0.006071325,
+      "count": 11752,
+      "frequency": 0.5437216618858147
+    },
+    {
+      "mark": 0.0068942182,
+      "count": 1781,
+      "frequency": 0.0824002961043768
+    },
+    {
+      "mark": 0.0077171114,
+      "count": 714,
+      "frequency": 0.03303414453594892
+    },
+    {
+      "mark": 0.0085400046,
+      "count": 259,
+      "frequency": 0.011982973998334413
+    },
+    {
+      "mark": 0.009362897799999999,
+      "count": 41,
+      "frequency": 0.0018969186638289996
+    },
+    {
+      "mark": 0.010185791,
+      "count": 14,
+      "frequency": 0.0006477283242342926
+    }
+  ]
+}

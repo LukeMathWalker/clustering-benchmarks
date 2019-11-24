@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:39:57Z",
+  "endReason": "timeout",
+  "count": 575148,
+  "total": 30000500797,
+  "average": 6615764,
+  "fastest": 1068365,
+  "slowest": 18424388,
+  "rps": 19171.279969350173,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 128
+  },
+  "statusCodeDistribution": {
+    "OK": 575020,
+    "Unavailable": 128
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 4889600
+    },
+    {
+      "percentage": 25,
+      "latency": 5808185
+    },
+    {
+      "percentage": 50,
+      "latency": 6735102
+    },
+    {
+      "percentage": 75,
+      "latency": 7481713
+    },
+    {
+      "percentage": 90,
+      "latency": 7985192
+    },
+    {
+      "percentage": 95,
+      "latency": 8275759
+    },
+    {
+      "percentage": 99,
+      "latency": 8996491
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.001068365,
+      "count": 1,
+      "frequency": 1.7390699453932036e-06
+    },
+    {
+      "mark": 0.0028039672999999998,
+      "count": 539,
+      "frequency": 0.0009373587005669368
+    },
+    {
+      "mark": 0.0045395696,
+      "count": 26660,
+      "frequency": 0.04636360474418281
+    },
+    {
+      "mark": 0.006275171899999999,
+      "count": 184128,
+      "frequency": 0.32021147090535984
+    },
+    {
+      "mark": 0.0080107742,
+      "count": 309298,
+      "frequency": 0.5378908559702271
+    },
+    {
+      "mark": 0.009746376499999999,
+      "count": 51947,
+      "frequency": 0.09033946645334075
+    },
+    {
+      "mark": 0.011481978799999999,
+      "count": 1665,
+      "frequency": 0.002895551459079684
+    },
+    {
+      "mark": 0.013217581099999999,
+      "count": 540,
+      "frequency": 0.00093909777051233
+    },
+    {
+      "mark": 0.014953183399999999,
+      "count": 131,
+      "frequency": 0.00022781816284650968
+    },
+    {
+      "mark": 0.0166887857,
+      "count": 74,
+      "frequency": 0.00012869117595909707
+    },
+    {
+      "mark": 0.018424388,
+      "count": 37,
+      "frequency": 6.434558797954854e-05
+    }
+  ]
+}

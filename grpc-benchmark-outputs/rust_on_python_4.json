@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:53:16Z",
+  "endReason": "timeout",
+  "count": 75607,
+  "total": 30000420814,
+  "average": 1507075,
+  "fastest": 545008,
+  "slowest": 7336882,
+  "rps": 2520.1979821802106,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 4
+  },
+  "statusCodeDistribution": {
+    "OK": 75603,
+    "Unavailable": 4
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 1150853
+    },
+    {
+      "percentage": 25,
+      "latency": 1306901
+    },
+    {
+      "percentage": 50,
+      "latency": 1491716
+    },
+    {
+      "percentage": 75,
+      "latency": 1686032
+    },
+    {
+      "percentage": 90,
+      "latency": 1873707
+    },
+    {
+      "percentage": 95,
+      "latency": 1987299
+    },
+    {
+      "percentage": 99,
+      "latency": 2250409
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.000545008,
+      "count": 1,
+      "frequency": 1.3226988347023267e-05
+    },
+    {
+      "mark": 0.0012241954,
+      "count": 12399,
+      "frequency": 0.16400142851474148
+    },
+    {
+      "mark": 0.0019033828,
+      "count": 56845,
+      "frequency": 0.7518881525865375
+    },
+    {
+      "mark": 0.0025825702,
+      "count": 6230,
+      "frequency": 0.08240413740195494
+    },
+    {
+      "mark": 0.0032617576,
+      "count": 80,
+      "frequency": 0.0010581590677618614
+    },
+    {
+      "mark": 0.0039409449999999995,
+      "count": 23,
+      "frequency": 0.00030422073198153513
+    },
+    {
+      "mark": 0.004620132399999999,
+      "count": 16,
+      "frequency": 0.00021163181355237227
+    },
+    {
+      "mark": 0.0052993198000000005,
+      "count": 3,
+      "frequency": 3.96809650410698e-05
+    },
+    {
+      "mark": 0.0059785072,
+      "count": 2,
+      "frequency": 2.6453976694046534e-05
+    },
+    {
+      "mark": 0.0066576946,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.007336882,
+      "count": 4,
+      "frequency": 5.290795338809307e-05
+    }
+  ]
+}

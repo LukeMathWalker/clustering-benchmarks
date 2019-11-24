@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:44:31Z",
+  "endReason": "timeout",
+  "count": 24183,
+  "total": 30000452352,
+  "average": 2383894,
+  "fastest": 945563,
+  "slowest": 7413174,
+  "rps": 806.0878454850306,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 2
+  },
+  "statusCodeDistribution": {
+    "OK": 24181,
+    "Unavailable": 2
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 1517802
+    },
+    {
+      "percentage": 25,
+      "latency": 2141067
+    },
+    {
+      "percentage": 50,
+      "latency": 2477143
+    },
+    {
+      "percentage": 75,
+      "latency": 2745735
+    },
+    {
+      "percentage": 90,
+      "latency": 2878015
+    },
+    {
+      "percentage": 95,
+      "latency": 2951539
+    },
+    {
+      "percentage": 99,
+      "latency": 3588454
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.000945563,
+      "count": 1,
+      "frequency": 4.135478268061701e-05
+    },
+    {
+      "mark": 0.0015923241,
+      "count": 2832,
+      "frequency": 0.11711674455150738
+    },
+    {
+      "mark": 0.0022390852,
+      "count": 4794,
+      "frequency": 0.19825482817087797
+    },
+    {
+      "mark": 0.0028858462999999997,
+      "count": 14308,
+      "frequency": 0.5917042305942682
+    },
+    {
+      "mark": 0.0035326074,
+      "count": 1977,
+      "frequency": 0.08175840535957983
+    },
+    {
+      "mark": 0.0041793685,
+      "count": 263,
+      "frequency": 0.010876307845002275
+    },
+    {
+      "mark": 0.0048261295999999995,
+      "count": 3,
+      "frequency": 0.00012406434804185105
+    },
+    {
+      "mark": 0.0054728907,
+      "count": 1,
+      "frequency": 4.135478268061701e-05
+    },
+    {
+      "mark": 0.0061196518,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.006766412899999999,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.007413174,
+      "count": 2,
+      "frequency": 8.270956536123402e-05
+    }
+  ]
+}

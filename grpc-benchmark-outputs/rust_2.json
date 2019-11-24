@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:35:31Z",
+  "endReason": "timeout",
+  "count": 173029,
+  "total": 30000204125,
+  "average": 278909,
+  "fastest": 116821,
+  "slowest": 6573865,
+  "rps": 5767.594089661881,
+  "errorDistribution": {
+    "rpc error: code = Canceled desc = grpc: the client connection is closing": 2
+  },
+  "statusCodeDistribution": {
+    "Canceled": 2,
+    "OK": 173027
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 209713
+    },
+    {
+      "percentage": 25,
+      "latency": 241191
+    },
+    {
+      "percentage": 50,
+      "latency": 276448
+    },
+    {
+      "percentage": 75,
+      "latency": 312575
+    },
+    {
+      "percentage": 90,
+      "latency": 346303
+    },
+    {
+      "percentage": 95,
+      "latency": 367961
+    },
+    {
+      "percentage": 99,
+      "latency": 413077
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.000116821,
+      "count": 1,
+      "frequency": 5.779444826529964e-06
+    },
+    {
+      "mark": 0.0007625254,
+      "count": 172917,
+      "frequency": 0.9993642610690817
+    },
+    {
+      "mark": 0.0014082298,
+      "count": 41,
+      "frequency": 0.0002369572378877285
+    },
+    {
+      "mark": 0.0020539342,
+      "count": 25,
+      "frequency": 0.0001444861206632491
+    },
+    {
+      "mark": 0.0026996386,
+      "count": 17,
+      "frequency": 9.825056205100937e-05
+    },
+    {
+      "mark": 0.003345343,
+      "count": 7,
+      "frequency": 4.045611378570974e-05
+    },
+    {
+      "mark": 0.0039910473999999994,
+      "count": 8,
+      "frequency": 4.623555861223971e-05
+    },
+    {
+      "mark": 0.0046367518,
+      "count": 7,
+      "frequency": 4.045611378570974e-05
+    },
+    {
+      "mark": 0.0052824562,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.005928160599999999,
+      "count": 2,
+      "frequency": 1.1558889653059928e-05
+    },
+    {
+      "mark": 0.006573865,
+      "count": 2,
+      "frequency": 1.1558889653059928e-05
+    }
+  ]
+}

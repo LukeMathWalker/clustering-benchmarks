@@ -1,0 +1,104 @@
+{
+  "date": "2019-11-24T20:52:35Z",
+  "endReason": "timeout",
+  "count": 92302,
+  "total": 30000308966,
+  "average": 572384,
+  "fastest": 305137,
+  "slowest": 6603689,
+  "rps": 3076.7016467933,
+  "errorDistribution": {
+    "rpc error: code = Unavailable desc = transport is closing": 1
+  },
+  "statusCodeDistribution": {
+    "OK": 92301,
+    "Unavailable": 1
+  },
+  "latencyDistribution": [
+    {
+      "percentage": 10,
+      "latency": 396930
+    },
+    {
+      "percentage": 25,
+      "latency": 481523
+    },
+    {
+      "percentage": 50,
+      "latency": 558227
+    },
+    {
+      "percentage": 75,
+      "latency": 657950
+    },
+    {
+      "percentage": 90,
+      "latency": 752173
+    },
+    {
+      "percentage": 95,
+      "latency": 791800
+    },
+    {
+      "percentage": 99,
+      "latency": 889382
+    }
+  ],
+  "histogram": [
+    {
+      "mark": 0.000305137,
+      "count": 1,
+      "frequency": 1.0834118806946836e-05
+    },
+    {
+      "mark": 0.0009349922,
+      "count": 91773,
+      "frequency": 0.9942795852699321
+    },
+    {
+      "mark": 0.0015648474000000002,
+      "count": 494,
+      "frequency": 0.005352054690631738
+    },
+    {
+      "mark": 0.0021947026000000004,
+      "count": 9,
+      "frequency": 9.750706926252153e-05
+    },
+    {
+      "mark": 0.0028245578000000004,
+      "count": 12,
+      "frequency": 0.00013000942568336204
+    },
+    {
+      "mark": 0.0034544130000000004,
+      "count": 6,
+      "frequency": 6.500471284168102e-05
+    },
+    {
+      "mark": 0.0040842682,
+      "count": 0,
+      "frequency": 0
+    },
+    {
+      "mark": 0.0047141234,
+      "count": 1,
+      "frequency": 1.0834118806946836e-05
+    },
+    {
+      "mark": 0.0053439786,
+      "count": 3,
+      "frequency": 3.250235642084051e-05
+    },
+    {
+      "mark": 0.005973833800000001,
+      "count": 1,
+      "frequency": 1.0834118806946836e-05
+    },
+    {
+      "mark": 0.006603689,
+      "count": 1,
+      "frequency": 1.0834118806946836e-05
+    }
+  ]
+}

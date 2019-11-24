@@ -17,7 +17,7 @@ function launch_python_server {
 }
 
 for server in "rust" "python" "rust_on_python"; do
-  for concurrency in 64 128 256 512 1024; do
+  for concurrency in 2 4 8 16 32 64 128 256 512 1024 2048 4096; do
     # Launch the server in a separate process
     case "$server" in
       rust)
