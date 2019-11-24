@@ -37,7 +37,7 @@ for server in "rust" "python" "rust_on_python"; do
     echo "Launched server with PID ${SERVER_PID}."
 
     # Sleep just to make sure the server is up and running before we start the benchmark
-    sleep 1s
+    sleep 10s
 
     echo "Start testing"
 
@@ -46,7 +46,7 @@ for server in "rust" "python" "rust_on_python"; do
         --call=ml.ClusteringService.Predict \
         --insecure \
         --data-file=data/observations.json \
-        --duration 1s \
+        --duration 30s \
         --concurrency $concurrency \
         --format json \
         localhost:5001 \
