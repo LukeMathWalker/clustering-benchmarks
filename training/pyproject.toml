@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "training-benchmarks"
+version = "0.0.1"
+authors = ["LukeMathWalker <rust@lpalmieri.com>"]
+description = "Training benchmarks for Linfa vs Scikit-learn"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+linfa = "^0.0.1"
+scikit-learn = "^0.21.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2.4"
+pytest-benchmark = "^3.2.2"
