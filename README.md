@@ -17,6 +17,8 @@ instructions to do so.
 
 ## Results
 
+### Training
+
 `linfa (Python wrapper)` is ~11x faster than `scikit-learn` in training a `K-Means` model
 on a dataset of 1 million points:
 
@@ -25,13 +27,18 @@ on a dataset of 1 million points:
 | Linfa (Python wrapper on Rust) | 395.26 |
 | Scikit-learn | 4,338.4951 **(10.98x slower)** |
 
+### Inference
+
+> _`linfa` on a Rust web server provides **~25x** better performance (requests per second, latency) compared
+to `scikit-learn` and **~7x** compared to `linfa (Python wrapper)` on a Python web server. 
+It also provides the lowest error rate under heavy load._
+
 For inference, `linfa (Python wrapper)` provides a 3.5x increase in throughput (number of requests per second)
 compared to `scikit-learn` using the same underlying web server (Python's `grpcio`).
 
 `linfa` on a Rust web server ([`tonic`](https://github.com/hyperium/tonic)) handles **25x** more requests
 per second than `scikit-learn` and **7x** more than `linfa (Python wrapper)` on a Python web server.
 ![Throughput](./visualisations/throughput.svg)
-<img src="./throughput.svg">
 
 The same holds for latency (how long it takes to provide a response), where `linfa (Python wrapper)` 
 is consistently ~3.5x faster than `scikit-learn` across all percentiles.
@@ -39,14 +46,12 @@ is consistently ~3.5x faster than `scikit-learn` across all percentiles.
 `linfa` on a Rust web server is consistently **26x** faster than `scikit-learn` and **7x** faster than
 than `linfa (Python wrapper)` on a Python web server.
 ![Latencies](./visualisations/latencies.svg)
-<img src="./latencies.svg">
 
 The Python web-server remains more stable under heavy load when serving `linfa (Python wrapper)` 
 compared to `scikit-learn` in terms of error rate (% of failed requests over total).
 
 `linfa` on a Rust web server has the lowest error rate under heavy load.
 ![Latencies](./visualisations/error_rate.svg)
-<img src="./error_rate.svg">
 
 
 ## Training benchmark
