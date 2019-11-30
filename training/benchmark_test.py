@@ -11,11 +11,12 @@ def make_data():
 def test_k_means_rust(benchmark, make_data):
     dataset, cluster_index = make_data
     model = KMeans(3, max_iter=100, tol=1e-4)
-    labels = benchmark(model.fit_predict, dataset)
+    labels = benchmark.pedantic(model.fit_predict, args=(dataset,), iterations=3, rounds=3)
+    # labels = benchmark(model.fit_predict, dataset)
     assert len(labels) == len(cluster_index)
 
 def test_k_means_python(benchmark, make_data):
     dataset, cluster_index = make_data
     model = sk_KMeans(3, init="random", algorithm="full", max_iter=100, tol=1e-4)
-    labels = benchmark(model.fit_predict, dataset)
+    labels = benchmark.pedantic(model.fit_predict, args=(dataset,), iterations=3, rounds=3)
     assert len(labels) == len(cluster_index)

@@ -37,7 +37,7 @@ marker = "python_version < \"3.8\""
 name = "importlib-metadata"
 optional = false
 python-versions = ">=2.7,!=3.0,!=3.1,!=3.2,!=3.3"
-version = "0.23"
+version = "1.0.0"
 
 [package.dependencies]
 zipp = ">=0.5"
@@ -60,15 +60,15 @@ description = ""
 name = "linfa"
 optional = false
 python-versions = "*"
-version = "0.0.1"
+version = "0.1.0"
 
 [[package]]
 category = "dev"
 description = "More routines for operating on iterables, beyond itertools"
 name = "more-itertools"
 optional = false
-python-versions = ">=3.4"
-version = "7.2.0"
+python-versions = ">=3.5"
+version = "8.0.0"
 
 [[package]]
 category = "main"
@@ -136,7 +136,7 @@ description = "pytest: simple powerful testing with Python"
 name = "pytest"
 optional = false
 python-versions = ">=3.5"
-version = "5.3.0"
+version = "5.3.1"
 
 [package.dependencies]
 atomicwrites = ">=1.0"
@@ -232,7 +232,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "a4385307abb08b455044d5f1e00ded9598fa0f4f783d5d2cf01e69f3267f8c92"
+content-hash = "6486d807e11ce30d72e253fde237b6112af01b3f07a8c78fe3beda591ab42e86"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -249,22 +249,21 @@ colorama = [
     {file = "colorama-0.4.1.tar.gz", hash = "sha256:05eed71e2e327246ad6b38c540c4a3117230b19679b875190486ddd2d721422d"},
 ]
 importlib-metadata = [
-    {file = "importlib_metadata-0.23-py2.py3-none-any.whl", hash = "sha256:d5f18a79777f3aa179c145737780282e27b508fc8fd688cb17c7a813e8bd39af"},
-    {file = "importlib_metadata-0.23.tar.gz", hash = "sha256:aa18d7378b00b40847790e7c27e11673d7fed219354109d0e7b9e5b25dc3ad26"},
+    {file = "importlib_metadata-1.0.0-py2.py3-none-any.whl", hash = "sha256:f4a7ba72e93bc97ff491b66d69063819ae2b75238bb653cd4c95e3f2847ce76e"},
+    {file = "importlib_metadata-1.0.0.tar.gz", hash = "sha256:a82ca8c109e194d7d6aee3f7531b0470dd4dd6b36ec14fd55087142a96bd55a7"},
 ]
 joblib = [
     {file = "joblib-0.14.0-py2.py3-none-any.whl", hash = "sha256:006108c7576b3eb6c5b27761ddbf188eb6e6347696325ab2027ea1ee9a4b922d"},
     {file = "joblib-0.14.0.tar.gz", hash = "sha256:6fcc57aacb4e89451fd449e9412687c51817c3f48662c3d8f38ba3f8a0a193ff"},
 ]
 linfa = [
-    {file = "linfa-0.0.1-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:3bb142508d07a93e7dda519428702a6b133fb8c41e887594e07d400b4918fdca"},
-    {file = "linfa-0.0.1-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:9ff450bb3be088255b34a379d113a5125e9b81223d73fe6e358e51368cf295ae"},
-    {file = "linfa-0.0.1-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:2f90a8b6359f899dc81a77128ad46e05e4ac71e4c4312a0ef6bb6adae5feaf30"},
-    {file = "linfa-0.0.1.tar.gz", hash = "sha256:f0590f67be989ff05723410fb0ba397af57713bf8edc25c54af49e506bda7edf"},
+    {file = "linfa-0.1.0-cp35-cp35m-manylinux1_x86_64.whl", hash = "sha256:235ead3a3d111a3bd55babaf9f3cc992c0208e0ad386b655c1b7c6419dd8f5ea"},
+    {file = "linfa-0.1.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:5c020130053d540cc5ce19ce7b30c91c525c9fbeb19c39391f8de36b6fa2c69e"},
+    {file = "linfa-0.1.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:a2aebeef13314b01cc83f505cd7d7f51a27d25d61f931517868d7b74c795e012"},
 ]
 more-itertools = [
-    {file = "more-itertools-7.2.0.tar.gz", hash = "sha256:409cd48d4db7052af495b09dec721011634af3753ae1ef92d2b32f73a745f832"},
-    {file = "more_itertools-7.2.0-py3-none-any.whl", hash = "sha256:92b8c4b06dac4f0611c0729b2f2ede52b2e1bac1ab48f089c7ddc12e26bb60c4"},
+    {file = "more-itertools-8.0.0.tar.gz", hash = "sha256:53ff73f186307d9c8ef17a9600309154a6ae27f25579e80af4db8f047ba14bc2"},
+    {file = "more_itertools-8.0.0-py3-none-any.whl", hash = "sha256:a0ea684c39bc4315ba7aae406596ef191fd84f873d2d2751f84d64e81a7a2d45"},
 ]
 numpy = [
     {file = "numpy-1.17.4-cp35-cp35m-macosx_10_6_intel.whl", hash = "sha256:ede47b98de79565fcd7f2decb475e2dcc85ee4097743e551fe26cfc7eb3ff143"},
@@ -309,8 +308,8 @@ pyparsing = [
     {file = "pyparsing-2.4.5.tar.gz", hash = "sha256:4ca62001be367f01bd3e92ecbb79070272a9d4964dce6a48a82ff0b8bc7e683a"},
 ]
 pytest = [
-    {file = "pytest-5.3.0-py3-none-any.whl", hash = "sha256:f6a567e20c04259d41adce9a360bd8991e6aa29dd9695c5e6bd25a9779272673"},
-    {file = "pytest-5.3.0.tar.gz", hash = "sha256:1897d74f60a5d8be02e06d708b41bf2445da2ee777066bd68edf14474fc201eb"},
+    {file = "pytest-5.3.1-py3-none-any.whl", hash = "sha256:63344a2e3bce2e4d522fd62b4fdebb647c019f1f9e4ca075debbd13219db4418"},
+    {file = "pytest-5.3.1.tar.gz", hash = "sha256:f67403f33b2b1d25a6756184077394167fe5e2f9d8bdaab30707d19ccec35427"},
 ]
 pytest-benchmark = [
     {file = "pytest-benchmark-3.2.2.tar.gz", hash = "sha256:4512c6805318d07926efcb3b39f7b98a10d035305a93edfd5329c86cbf9cfbf7"},
