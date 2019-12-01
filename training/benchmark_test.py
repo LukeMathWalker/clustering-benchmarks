@@ -16,6 +16,6 @@ def test_k_means_rust(benchmark, make_data):
 
 def test_k_means_python(benchmark, make_data):
     dataset, cluster_index = make_data
-    model = sk_KMeans(3, init="random", algorithm="full", max_iter=100, tol=1e-4)
+    model = sk_KMeans(3, init="random", algorithm="full", max_iter=100, tol=1e-4, n_init=1)
     labels = benchmark(model.fit_predict, dataset)
     assert len(labels) == len(cluster_index)
